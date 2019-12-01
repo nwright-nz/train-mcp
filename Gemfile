@@ -11,7 +11,6 @@ source "https://rubygems.org"
 gemspec
 
 gem "train-core", [">= 1.7.5", "< 4.0"]
-
 group :development do
   gem "pry"
   gem "bundler"

@@ -42,6 +42,6 @@ Gem::Specification.new do |spec|
 
   # All plugins should mention train, > 1.4
   # spec.add_dependency "train", "~> 3.0"
-  spec.add_dependency 'didata_cloud_sdk', '0.3.3'
+  spec.add_dependency 'cloudcontrol_sdk', "0.4.1"
 
 end

@@ -15,12 +15,10 @@ module TrainPlugins
       # subclass of BaseConnection.
       option :user, required: true, default: ENV["MCP_USER"] 
       option :pass, required: true, default: ENV["MCP_PASSWORD"]
-      option :org_id, required: true, default: ENV["MCP_ORG"] 
-      option :url, required: true, default: ENV["MCP_ENDPOINT"]       
-      puts "transport"
+      option :org_id, required: true, default: ENV["MCP_ORG"]
+      option :url, required: true, default: ENV["MCP_ENDPOINT"]
       # The options passed to this are undocumented and rarely used.
       def connection(_instance_opts = nil)
-        puts "connection"
         # Typical practice is to cache the connection as an instance variable.
         # Do what makes sense for your platform.
         # @options here is the parsed options that the calling
